@@ -52,7 +52,6 @@ def generate_ofdm_signal(tx_syms_grid, N, cp_len):
     return tx_cp.flatten()
 
 def plot_spectrum(signal, fs, title, color='b', label=None):
-    """Helper to plot PSD"""
     f = np.fft.fftfreq(len(signal), d=1/fs)
     Pxx = 10 * np.log10(np.abs(np.fft.fft(signal))**2 / len(signal))
     
