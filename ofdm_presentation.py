@@ -237,7 +237,7 @@ def simulation_presentation_steps():
     data_bits = np.array([1, 0, 1, 0, 1, 0, 1, 0, 1, 0])
     print(f"Transmitting Bits: {data_bits}")
     
-    # User Request: "Shifting every 1ms"
+    # Switching every 1ms
     # We need to stretch the simulation so each bit lasts 1ms.
     # fs = 20 MHz. 1ms = 20,000 samples.
     # CRITICAL FIX: The bit duration MUST be an exact multiple of the code_length (31).
